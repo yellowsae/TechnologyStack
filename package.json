@@ -1,0 +1,37 @@
+{
+  "name": "vue3-ts",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . ",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install",
+    "lint:staged": "lint-staged"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^0.37.0",
+    "@element-plus/icons-vue": "^2.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "element-plus": "^2.3.1",
+    "eslint": "^8.36.0",
+    "unocss": "^0.50.6",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.6",
+    "typescript": "^4.9.3",
+    "unplugin-auto-import": "^0.15.1",
+    "unplugin-vue-components": "^0.24.1",
+    "vite": "^4.2.0",
+    "vue-tsc": "^1.2.0"
+  }
+}
