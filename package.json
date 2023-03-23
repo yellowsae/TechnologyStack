@@ -1,6 +1,6 @@
 {
   "name": "vue3-ts",
-  "type": "module",
+  "type": "commonjs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
