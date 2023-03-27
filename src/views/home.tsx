@@ -81,7 +81,8 @@ export default defineComponent({
         <Renders />
 
         <el-button type="primary" onClick={logout}>Logout</el-button>
-
+        <br />
+        <el-button type='danger' onClick={() => router.push({ name: '404' })}>404</el-button>
         {/* 使用 pinia */}
       </>
     )
