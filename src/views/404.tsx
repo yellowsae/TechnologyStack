@@ -1,9 +1,8 @@
 import { defineComponent } from 'vue'
-import { RouterView } from 'vue-router'
 
 export default defineComponent({
-  name: 'App',
+  name: '404',
   setup() {
-    return () => <RouterView />
+    return () => <div>404</div>
   },
 })
