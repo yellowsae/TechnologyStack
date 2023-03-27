@@ -4,6 +4,7 @@ import Child from './child'
 import Renders from './userRender'
 import foucsDirective from '@/directive/focus'
 import { loginStore } from '@/store/login'
+import router from '@/router'
 export default defineComponent({
   name: 'Home',
   directives: {
@@ -20,6 +21,13 @@ export default defineComponent({
     const size = ref<'large' | 'medium' | 'small' | 'mini'>('mini')
     const container = ref(true)
     const string = ref<string>('123')
+
+    const logout = () => {
+      localStorage.removeItem('user')
+      router.push({
+        name: 'login',
+      })
+    }
 
     return () => (
       <>
@@ -71,6 +79,8 @@ export default defineComponent({
 
         {/* 使用组件 */}
         <Renders />
+
+        <el-button type="primary" onClick={logout}>Logout</el-button>
 
         {/* 使用 pinia */}
       </>
