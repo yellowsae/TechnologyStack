@@ -18,8 +18,8 @@ export default defineComponent({
     }
 
     return () => (
-      <div class={theme.value ? 'bg-dark' : 'bg-light'} flex justify-center items-center flex-row h-screen w-screen>
-        <el-row m-10>
+      <div class={String('flex justify-center items-center flex-row h-screen w-screen bg-dark-100')}>
+        <el-row class="m-10">
           <el-button onClick={buttomClick}>Default</el-button>
           <el-button type="primary" onClick={buttomClick}>
             Primary

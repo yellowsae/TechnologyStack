@@ -3,10 +3,10 @@ import ElementPlus from 'element-plus'
 import { createPinia } from 'pinia'
 import router from '@/router'
 import foucsDirective from '@/directive/focus'
-import 'element-plus/dist/index.css'
 import App from '@/App'
-import 'uno.css'
-import './styles/index.css'
+import 'tailwindcss/tailwind.css'
+import './index.css'
+import 'element-plus/dist/index.css'
 
 const pinia = createPinia()
 const app = createApp(App)
