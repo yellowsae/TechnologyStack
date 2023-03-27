@@ -6,7 +6,7 @@ export default defineComponent({
   setup(props, { slots, emit }) {
     return () => (
       <>
-        <el-text>默认插槽:  {slots.default && slots.default()}</el-text>
+        <el-text class="m-10">默认插槽:  {slots.default && slots.default()}</el-text>
         <br />
         <el-text>命名插槽:  {slots.header && slots.header()}</el-text>
         <br />

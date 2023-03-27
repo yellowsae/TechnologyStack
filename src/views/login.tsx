@@ -1,5 +1,6 @@
-import { defineComponent, ref } from 'vue'
+import { defineComponent, reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
+import Toggle from '@/components/Toggle'
 export default defineComponent({
   name: 'Login',
   setup() {
@@ -15,6 +16,12 @@ export default defineComponent({
       router.push({
         name: 'home',
       })
+    }
+    const state = reactive({
+      isOn: false,
+    })
+    const changeClick = (value: boolean) => {
+      state.isOn = value
     }
 
     return () => (
@@ -37,6 +44,12 @@ export default defineComponent({
             Danger
           </el-button>
           <el-button type="primary" onClick={login}>login</el-button>
+          <Toggle {...{
+            value: theme.value,
+            onText: 'On',
+            offText: 'Off',
+            changeClick,
+          }} />
         </el-row>
         <el-image style="width: 100px; height: 100px" src="https://www.github.com/yellowsae.png" />
       </div>
