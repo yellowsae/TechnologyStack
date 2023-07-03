@@ -55,6 +55,7 @@ export default defineComponent({
 
         {/* 自定义指令 */}
         <br />
+        <el-text>自定义指令： v-focus</el-text>
         <el-input type="text" v-focus v-model={string.value}></el-input>
 
         <br />
